@@ -1,4 +1,57 @@
+#PROJE DENEME
 
+#HOŞGELDİNİZ EKRaNI, 
+   # ** günlükçalışma / hedef süresi
+   # ** soru çözümü  > ders 
+   # ** deneme netleri kayıt
+   # ** okunan kitaplar kayıt/ sayfa saysıs
+   # ** takvim kısmı
+
+#GÜNLÜK ÇALIŞMA EKRANI
+  # bugünkü hedef ders süreni sorar. 
+  # dersleri ekranda yazar, girilen ders sürelerini toplar
+  # bugünkü toplam çalışma süresi:" 3 saat 20 dakida " gibi olarak yazdırır.  
+  # en çok çalışılan ders "matematik" gibi yazar.
+  # günlük hedef tamamlanan "½82" gibi yazar
+  # çıkış ekranı ekle
+
+#SORU ÇÖZÜMÜ EKRANI
+  # bugünkü hedef soru sayını sorar. 
+  # dersleri ekranda yazar, girilen soru sayılarını toplar
+  # bugünkü toplam soru sayısını:"150 soru " gibi olarak yazdırır.  
+  # en çok çalışılan ders "matematik" gibi yazar.
+  # günlük hedef tamamlanan "½82" gibi yazar
+  # çıkış ekranı ekle
+  
+#DENEME NETLERİ KAYIT
+  # son denemeler kısmı 
+    # esi deneme netlerini görüntüler
+  # yeni deneme sonucu ekle ekranı
+    # ders ders ndoğru yanlış sayısını kaydet
+    # yüzde istatsitikleri ile sırala
+    # grafik tabloları şekilli ile göster # çıkış ekranı ekle
+    
+#OKUNAN KİTAP KAYIT SAYFASI
+ 
+  # yeni okunan kitap ismi alır 
+  # sayfa saysısı alır.
+  # kategori alınır.
+  # bu hafta okunan kitaplar : 
+  # en çok okunan tür : 
+  # çıkış ekranı ekle
+  
+#TAKVİM KISMINI AÇTIĞINDA 
+   # hedef tarih sorar.
+   # o gün yapılan deneme varsa deneme netlerini gösterir.
+   # o gün okunan kitapları gösterir.
+   # o gün çalışılan ders süresi 
+   # o gün çalışılan soru sayısı
+
+# SQL LİTE İLE TAKVİMDE KAYITLI ÇALIŞMA SÜRELERİNİ GÖSTERME, SORU ÇÖZÜM SAYILARINI GÖSTERME,
+# DENEME NETLERİNİ GÖSTERME, OKUNAN KİTAPLARI GÖSTERME, GRAFİKSEL OLARAK GÖSTERME
+# BUNLARI EKLENECEK. (Grafiksel olarak göstermek için matplotlib kütüphanesi kullanılabilirim.)
+
+# GÖRSEL GÜZELLEŞTİRME İLE DAHA ZEVK ALIANBİLİR Bİ HALE GETİREBİLİRİM.
 
 dersler = [
     "📐 matematik",
@@ -281,11 +334,13 @@ def takvim(giris):
         if kalan_gun > 0:
             print(f"\n⏳ Hedefinize kalan süre: {kalan_gun} gün!")
         elif kalan_gun == 0:
-            print("\n🎉 Hedef günü bugünün kendisi!")
+            print("\n 🎉 Hedef günü bugünün kendisi!")
         else:
-            print(f"\n⚠️ Belirttiğiniz tarihin üzerinden {abs(kalan_gun)} gün geçmiş.")
+            print(f"\n ⚠️ Belirttiğiniz tarihin üzerinden {abs(kalan_gun)} gün geçmiş.")
     except ValueError:
-        print("❌ Hatalı tarih formatı girdiniz.")
+        print(" ❌ Hatalı tarih formatı girdiniz.")
+
+
 
 
 if __name__ == "__main__":
